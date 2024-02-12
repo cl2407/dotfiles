@@ -1,0 +1,25 @@
+#+author: Conor L
+#+title: My dotfiles
+
+* Dependencies
+Ensure you have all dependencies installed
+** git
+#+begin_src
+sudo pacman -S git
+#+end_src
+** stow
+#+begin_src
+sudo pacman -S stow
+#+end_src
+** mpd + ncmpcpp + mpc
+#+begin_src
+sudo pacman -S mpd ncmpcpp mpc
+#+end_src
+** sxhkd
+#+begin_src
+sudo pacman -S sxhkd
+#+end_src
+** emacs
+#+begin_src
+sudo pacman -S emacs
+#+end_src
