@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if nmcli | grep "connected" > /dev/null; then
+	echo "  Connected"
+else
+	echo "󰖪 Disconnected";	
+fi

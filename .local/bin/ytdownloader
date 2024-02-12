@@ -1,0 +1,5 @@
+#!/bin/sh
+
+url=$(echo "" | dmenu -p "Enter URL: ")
+yt-dlp --extract-audio --audio-format mp3 $url
+

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Check if MPD process is running
+if ps -ef | grep -q '[m]pd'; then
+    # Get currently playing song
+    current_song=$(mpc current)
+
+    # Check if any song is playing
+    if [ -n "$current_song" ]; then
+        echo "󰎈 $current_song"
+    else
+        echo "󰝛"
+    fi
+else
+    echo "󰝛"
+fi
+
