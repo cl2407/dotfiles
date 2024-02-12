@@ -1,0 +1,24 @@
+# Run dmenu with colorscheme
+super + space
+	dmenu_run
+# Increase volume
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Decrease volume
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Mute/unmute volume
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Mute/unmute microphone
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+#Spawn alacritty
+super + Return
+	alacritty
+# Pause and play songs
+F1
+	mpc toggle
