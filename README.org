@@ -23,3 +23,9 @@ sudo pacman -S sxhkd
 #+begin_src
 sudo pacman -S emacs
 #+end_src
+* Install
+Clone the repo in $HOME directory.
+Use gnu/stow to create symlinks
+#+begin_src
+stow .
+#+end_src
