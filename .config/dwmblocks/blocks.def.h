@@ -6,6 +6,7 @@ static const Block blocks[] = {
 	{"󰃭  ", "date '+%b %d (%a)'",					5,		0},
 	{"  ", "date '+%R'",					5,		0},
 	{"", "~/.local/bin/wificonnection",					60,		0},
+	{"", "~/.local/bin/blueconnection",					60,		0},
 	{"", "~/.local/bin/musicplayin",					10,		0},
 };
 
