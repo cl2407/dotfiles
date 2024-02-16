@@ -5,6 +5,8 @@ state=$(cat /sys/class/power_supply/BAT0/status)
 
 if [ "$state" == 'Not Charging' ]; then
 	echo "$battery %"
+elif [ "$state" == "Discharging" ]; then
+	echo "$battery %"
 else
 	echo "󰂄 $battery %"
 fi
