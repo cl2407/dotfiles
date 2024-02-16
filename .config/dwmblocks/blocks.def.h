@@ -4,6 +4,7 @@ static const Block blocks[] = {
 	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 
 	{"󰃭  ", "date '+%b %d (%a)'",					5,		0},
+	{"", "~/.local/bin/battery",					5,		0},
 	{"  ", "date '+%R'",					5,		0},
 	{"", "~/.local/bin/wificonnection",					60,		0},
 	{"", "~/.local/bin/blueconnection",					60,		0},
